@@ -30,3 +30,6 @@ for /f "delims=." %%a in ("%input_file%") do set filename=%%~nxa
 
 
 
+
+
+
