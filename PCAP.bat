@@ -20,7 +20,7 @@ for /f "delims=." %%a in ("%input_file%") do set filename=%%~nxa
 	set folderName=!folderPrefix!_!counter!
     if not exist "%Folder%\!folderName!" (
         mkdir "%Folder%\!folderName!"
-    )
+ )
 
 	move "%Folder%\!filename!.pcapng.gz" "%Folder%\%folderName%\!filename!.pcapng.gz"
 	move "%Folder%\!filename!.pcapng" "%Folder%\%folderName%\!filename!.pcapng"
